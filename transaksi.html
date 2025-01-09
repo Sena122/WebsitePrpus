@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan - Transaksi</title>
+    <link rel="stylesheet" href="transaksi.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Aplikasi" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html" class="active">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="galeriBuku">
+            <h2>Galeri Buku</h2>
+            <div class="galeri">
+                <div class="buku">
+                    <img src="buku1.jpg" alt="Buku 1">
+                    <div class="keterangan">
+                        <p><strong>Nama Buku:</strong>  self-development</p>
+                        <p><strong>Stok:</strong> 115</p>
+                        <p><strong>Judul:</strong> The Psychology of Money</p>
+                    </div>
+                </div>
+                <div class="buku">
+                    <img src="buku2.jpg" alt="Buku 2">
+                    <div class="keterangan">
+                        <p><strong>Nama Buku:</strong> Novel</p>
+                        <p><strong>Stok:</strong> 291</p>
+                        <p><strong>Judul:</strong> Konspirasi Alam Semesta</p>
+                    </div>
+                </div>
+                <div class="buku">
+                    <img src="buku3.jpg" alt="Buku 3">
+                    <div class="keterangan">
+                        <p><strong>Nama Buku:</strong> Antologi</p>
+                        <p><strong>Stok:</strong> 119</p>
+                        <p><strong>Judul:</strong> Perjalanan Menemukan Rumah</p>
+                    </div>
+                </div>
+                <div class="buku">
+                    <img src="buku4.jpg" alt="Buku 4">
+                    <div class="keterangan">
+                        <p><strong>Nama Buku:</strong> Komik</p>
+                        <p><strong>Stok:</strong> 10</p>
+                        <p><strong>Judul:</strong> Jujutsu Kaisen</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="transaksi" class="form">
+            <h2>Form Transaksi</h2>
+            <form id="transaksiForm">
+                <label for="namaTransaksi">Nama buku:</label>
+                <input type="text" id="namaTransaksi" name="namaTransaksi" required><br><br>
+
+                <label for="jumlah">Jumlah:</label>
+                <input type="number" id="jumlah" name="jumlah" required><br><br>
+
+                <label for="kategori">Kategori:</label>
+                <select id="kategori" name="kategori" required>
+                    <option value="">Pilih Kategori</option>
+                    <option value="Peminjaman">Peminjaman</option>
+                    <option value="Pengembalian">Pengembalian</option>
+                </select><br><br>
+
+                <button type="submit">Simpan</button>
+            </form>
+        </section>
+
+        <section id="daftarTransaksi">
+            <h2>Daftar Transaksi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Buku</th>
+                        <th>Jumlah</th>
+                        <th>Kategori</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelTransaksi">
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Perpustakaan © 2025</p>
+    </footer>
+
+    <script src="transaksi.js"></script>
+</body>
+</html>
